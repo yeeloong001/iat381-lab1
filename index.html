@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>IAT 381 Lab 1</title>
+
+		<link rel='stylesheet' href='dist/css/bootstrap.css'>
+	</head>
+
+	<style>
+		p {
+			color: yellow;
+		}
+
+		h3 {
+			color: white;
+		}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script>
+		$('#myTab a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+
+		// $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+		// $('#myTab a:first').tab('show') // Select first tab
+		// $('#myTab a:last').tab('show') // Select last tab
+		// $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+
+	</script>
+
+	<body>
+		<div class="container-fluid">
+			<h1>Hello, I am Baymax</h1>
+			
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+			    <li role="presentation"><a href="#profile" aria-controls="tab1" role="tab" data-toggle="tab">Profile</a></li>
+			    <li role="presentation"><a href="#messages" aria-controls="tab2" role="tab" data-toggle="tab">Messages</a></li>
+			    <li role="presentation"><a href="#settings" aria-controls="tab3" role="tab" data-toggle="tab">Settings</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="home">Bodycopy 1</div>
+			    <div role="tabpanel" class="tab-pane fade" id="profile">Bodycopy 2</div>
+			    <div role="tabpanel" class="tab-pane fade" id="messages">Bodycopy 3</div>
+			    <div role="tabpanel" class="tab-pane fade" id="settings">Bodycopy 4</div>
+			  </div>
+
+<!-- 			<div class="col-md-4 bg">
+				<h3>Test 1</h3>
+				<p>Bodycopy 1</p>
+			</div>
+			<div class="col-md-4 bg">
+				<h3>Test 1</h3>
+				<p>Bodycopy 1</p>
+			</div>
+			<div class="col-md-4 bg">
+				<h3>Test 1</h3>
+				<p>Bodycopy 1</p>
+			</div> -->
+
+		</div>
+	</body>
+
+</html>
